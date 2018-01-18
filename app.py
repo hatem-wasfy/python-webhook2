@@ -41,7 +41,8 @@ def makeWebhookResult(req):
     
     
 
-    speech = "There are nice" + attraction #+ "places in " + city + "to have" + resolvedQuery + " and I will tell you about them. " #+ str(cost[zone])
+    ###speech = "There are nice" + attraction #+ "places in " + city + "to have" + resolvedQuery + " and I will tell you about them. " #+ str(cost[zone])
+    speech = "There are nice places in " + city + " and I will tell you about them. "
     print("Response:")
     print(speech)
     return {
