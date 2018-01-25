@@ -43,7 +43,7 @@ def makeWebhookResult(req):
     ##working### speech = "There are nice places in " + city + " and I will tell you about them. "
     #speech = "There are nice " + attraction + " to have " + resolvedQuery + "places in " + city + " and I will tell you about them. "
     #speech = "There are nice places in " + city + attraction + resolvedQuery + " and I will tell you about them. "
-    speech = "Hmm, I'll tell you about the best places in " + city + " to have " + resolvedQuery #attraction
+    speech = "Hmm, I'll tell you about the best places in " + city + " to have " + attraction
     
     print("Response:")
     print(speech)
