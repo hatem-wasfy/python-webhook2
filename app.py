@@ -45,7 +45,12 @@ def makeWebhookResult(req):
     resolvedQuery = parameters.get("resolvedQuery")
     attraction = parameters.get("attraction")    
 
-   
+   ##############################Hatem
+   # You may prefer to use the text_search API, instead.
+    query_result = google_places.nearby_search(
+        location='London, England', keyword='Fish and Chips',
+        radius=20000, types=[types.TYPE_FOOD])
+   ##############################Hatem
 
     ###speech = "There are nice" + attraction #+ "places in " + city + "to have" + resolvedQuery + " and I will tell you about them. " #+ str(cost[zone])
     ##working### speech = "There are nice places in " + city + " and I will tell you about them. "
