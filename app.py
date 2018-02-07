@@ -52,15 +52,15 @@ def makeWebhookResult(req):
         radius=20000, types=[types.TYPE_FOOD])
     
     
-        #if query_result.has_attributions:
-        xplace = query_result.html_attributions
+            #if query_result.has_attributions:
+            xplace = query_result.html_attributions
 
 
-        ##for place in query_result.places:
-        # Returned places from a query are place summaries.
-        wasfy1 = place.name
-        wasfy2 = place.geo_location
-        wasfy3 = place.place_id
+            ##for place in query_result.places:
+            # Returned places from a query are place summaries.
+            wasfy1 = place.name
+            wasfy2 = place.geo_location
+            wasfy3 = place.place_id
     
    ##############################Hatem
 
