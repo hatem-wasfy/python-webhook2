@@ -45,21 +45,7 @@ def makeWebhookResult(req):
     resolvedQuery = parameters.get("resolvedQuery")
     attraction = parameters.get("attraction")    
 
-    
-    
-    #################################### Hatem dealing with google location api ###################################
-    
-    # You may prefer to use the text_search API, instead.
-query_result = google_places.nearby_search(
-        location='London, England', keyword='Fish and Chips',
-        radius=20000, types=[types.TYPE_FOOD])
-# If types param contains only 1 item the request to Google Places API
-# will be send as type param to fullfil:
-# http://googlegeodevelopers.blogspot.com.au/2016/02/changes-and-quality-improvements-in_16.html
-
-
-    ###############################################################################################################
-    
+   
 
     ###speech = "There are nice" + attraction #+ "places in " + city + "to have" + resolvedQuery + " and I will tell you about them. " #+ str(cost[zone])
     ##working### speech = "There are nice places in " + city + " and I will tell you about them. "
@@ -76,6 +62,21 @@ query_result = google_places.nearby_search(
         #"contextOut": [],
         ##"source": "travelsourse"
     }
+
+    #################################### Hatem dealing with google location api ###################################
+    
+    # You may prefer to use the text_search API, instead.
+query_result = google_places.nearby_search(
+        location='London, England', keyword='Fish and Chips',
+        radius=20000, types=[types.TYPE_FOOD])
+# If types param contains only 1 item the request to Google Places API
+# will be send as type param to fullfil:
+# http://googlegeodevelopers.blogspot.com.au/2016/02/changes-and-quality-improvements-in_16.html
+
+
+    ###############################################################################################################
+
+
 
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
