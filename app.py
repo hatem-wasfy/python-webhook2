@@ -70,7 +70,10 @@ def makeWebhookResult(req):
     #############
     
     #hatem
-    speech = "Hmm, I'll tell you about the best places in " + city + " to have " + attraction + ", how about: " + place_name + " and its address is: " place_geo_loc
+    #speech = "Hmm, I'll tell you about the best places in " + city + " to have " + attraction + ", how about: " + place_name + " and its address is: " place_geo_loc
+    speech = "Hmm, I'll tell you about the best places in " + city + " to have " + attraction + ", how about: " + place_name 
+## + " and its address is: " place_geo_loc
+
     ####
     
     
