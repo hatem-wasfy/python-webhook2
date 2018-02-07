@@ -57,6 +57,7 @@ def makeWebhookResult(req):
         place_name = place.name
         place_geo_loc = place.geo_location
         place_id = place.place_id
+        place_photo_url=place.photo.url
     
    ##############################Hatem
 
@@ -71,7 +72,7 @@ def makeWebhookResult(req):
     
     #hatem
     #speech = "Hmm, I'll tell you about the best places in " + city + " to have " + attraction + ", how about: " + place_name + " and its address is: " place_geo_loc
-    speech = "Hmm, I'll tell you about the best places in " + city + " to have " + attraction + ", how about: " + place_name + "?"
+    speech = "Hmm, I'll tell you about the best places in " + city + " to have " + attraction + ", how about: " + place_name + " check its photo here: " + place_photo_url + "?"
 ## + " and its address is: " place_geo_loc
 
     ####
