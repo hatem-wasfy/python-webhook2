@@ -57,6 +57,7 @@ query_result = google_places.nearby_search(
 # will be send as type param to fullfil:
 # http://googlegeodevelopers.blogspot.com.au/2016/02/changes-and-quality-improvements-in_16.html
 
+...
 if query_result.has_attributions:
     print query_result.html_attributions
 
@@ -114,7 +115,7 @@ except GooglePlacesError as error_detail:
     # You've passed in parameter values that the Places API doesn't like..
     print error_detail
     
-    
+   ... 
     ###############################################################################################################
     
 
