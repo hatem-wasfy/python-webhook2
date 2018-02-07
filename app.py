@@ -50,13 +50,33 @@ def makeWebhookResult(req):
     query_result = google_places.nearby_search(
         location='London, England', keyword='Fish and Chips',
         radius=20000, types=[types.TYPE_FOOD])
+    
+    
+        #if query_result.has_attributions:
+        xplace = query_result.html_attributions
+
+
+        ##for place in query_result.places:
+        # Returned places from a query are place summaries.
+        wasfy1 = place.name
+        wasfy2 = place.geo_location
+        wasfy3 = place.place_id
+    
    ##############################Hatem
 
     ###speech = "There are nice" + attraction #+ "places in " + city + "to have" + resolvedQuery + " and I will tell you about them. " #+ str(cost[zone])
     ##working### speech = "There are nice places in " + city + " and I will tell you about them. "
     #speech = "There are nice " + attraction + " to have " + resolvedQuery + "places in " + city + " and I will tell you about them. "
     #speech = "There are nice places in " + city + attraction + resolvedQuery + " and I will tell you about them. "
-    speech = "Hmm, I'll tell you about the best places in " + city + " to have " + attraction
+    
+    ###working###
+    #speech = "Hmm, I'll tell you about the best places in " + city + " to have " + attraction
+    #############
+    
+    #hatem
+    speech = "Hmm, I'll tell you about the best places in " + xplace
+    ####
+    
     
     print("Response:")
     print(speech)
