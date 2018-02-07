@@ -51,14 +51,12 @@ def makeWebhookResult(req):
         location='London, England', keyword='Fish and Chips',
         radius=20000, types=[types.TYPE_FOOD])
     
-    xplace = query_result.html_attributions
-
-
-            ##for place in query_result.places:
-            # Returned places from a query are place summaries.
-            #wasfy1 = place.name
-            #wasfy2 = place.geo_location
-            #wasfy3 = place.place_id
+    #xplace = query_result.html_attributions
+    for place in query_result.places:
+        #Returned places from a query are place summaries.
+        wasfy1 = place.name
+        wasfy2 = place.geo_location
+        wasfy3 = place.place_id
     
    ##############################Hatem
 
@@ -72,7 +70,7 @@ def makeWebhookResult(req):
     #############
     
     #hatem
-    speech = "Hmm, I'll tell you about the best places in " + xplace
+    speech = "Hmm, I'll tell you about the best places in " + wasfy1
     ####
     
     
