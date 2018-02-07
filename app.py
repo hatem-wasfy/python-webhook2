@@ -49,7 +49,7 @@ def makeWebhookResult(req):
    # You may prefer to use the text_search API, instead.
     query_result = google_places.nearby_search(
         location=city, keyword=attraction,
-        radius=20000, types=[types.TYPE_FOOD])
+        radius=20000) #, types=[types.TYPE_FOOD])
     
     #xplace = query_result.html_attributions
     for place in query_result.places:
