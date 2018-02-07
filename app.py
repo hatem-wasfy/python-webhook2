@@ -54,9 +54,9 @@ def makeWebhookResult(req):
     #xplace = query_result.html_attributions
     for place in query_result.places:
         #Returned places from a query are place summaries.
-        wasfy1 = place.name
-        wasfy2 = place.geo_location
-        wasfy3 = place.place_id
+        place_name = place.name
+        place_geo_loc = place.geo_location
+        place_id = place.place_id
     
    ##############################Hatem
 
@@ -70,7 +70,7 @@ def makeWebhookResult(req):
     #############
     
     #hatem
-    speech = "Hmm, I'll tell you about the best places in " + wasfy1
+    speech = "Hmm, I'll tell you about the best places in " + city + " to have " + attraction + ", how about: " + place_name + " and its address is: " place_geo_loc
     ####
     
     
