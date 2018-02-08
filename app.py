@@ -59,6 +59,24 @@ def makeWebhookResult(req):
         place_id = place.place_id
         place.get_details()
         place_url=place.url
+        
+        #Getting place photos
+
+        for photo in place.photos:
+            # 'maxheight' or 'maxwidth' is required
+            place_photo = photo.get(maxheight=500, maxwidth=500)
+            # MIME-type, e.g. 'image/jpeg'
+            place_mime = photo.mimetype
+            # Image URL
+            place_photo_url = photo.url
+            # Original filename (optional)
+            place_photo_name = photo.filename
+            # Raw image data
+            place_photo_data = photo.data
+            
+            robot_photo = https://cdn.pixabay.com/photo/2014/04/03/11/55/robot-312566_960_720.png
+                
+        
     
    ##############################Hatem
 
@@ -97,7 +115,7 @@ def makeWebhookResult(req):
         "messages":[
         {
             "type": 3,
-            "imageUrl":"https://cdn.pixabay.com/photo/2014/04/03/11/55/robot-312566_960_720.png"
+            "imageUrl":place_photo_url
         },
             {
                 "type": 0,
