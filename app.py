@@ -69,7 +69,7 @@ def makeWebhookResult(req):
             # MIME-type, e.g. 'image/jpeg'
             ###place_mime = photo.mimetype
             # Image URL
-            place_photo_url = photo.url
+            place_photo_url=photo.url
             # Original filename (optional)
             ###place_photo_name = photo.filename
             # Raw image data
