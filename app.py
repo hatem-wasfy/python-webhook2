@@ -12,6 +12,7 @@ from flask import make_response
 from googleplaces import GooglePlaces, types, lang
 
 YOUR_API_KEY = 'AIzaSyADsZZiGIWF2laJkl5qNE5EUkSXkye4HG4'
+robot_photo_url = "https://cdn.pixabay.com/photo/2014/04/03/11/55/robot-312566_960_720.png"
 
 google_places = GooglePlaces(YOUR_API_KEY)
 
@@ -74,7 +75,7 @@ def makeWebhookResult(req):
             # Raw image data
             ###place_photo_data = photo.data
             
-            robot_photo_url = "https://cdn.pixabay.com/photo/2014/04/03/11/55/robot-312566_960_720.png"
+            
                 
         
     
