@@ -81,9 +81,9 @@ def makeWebhookResult(req):
     
     print("Response:")
     print(speech)
-    return {
-        "speech": speech,
-        "displayText": speech,
+    ###return {
+        ###"speech": speech,
+        ###"displayText": speech,
         #"data": {},
         #"contextOut": [],
         ##"source": "travelsourse"
@@ -91,8 +91,19 @@ def makeWebhookResult(req):
 
 #########
 
-
-
+    return {
+        "speech": speech,
+        "displayText": speech,
+        {
+            "type": 3,
+            "imageUrl":"https://cdn.pixabay.com/photo/2014/04/03/11/55/robot-312566_960_720.png"
+        }
+        
+        #"data": {},
+        #"contextOut": [],
+        ##"source": "travelsourse"
+    }
+###########################################
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
 
