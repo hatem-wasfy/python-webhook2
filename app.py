@@ -98,7 +98,11 @@ def makeWebhookResult(req):
         {
             "type": 3,
             "imageUrl":"https://cdn.pixabay.com/photo/2014/04/03/11/55/robot-312566_960_720.png"
-        }
+        },
+            {
+                "type": 0,
+                "speech": speech
+            }
         ]
         #"data": {},
         #"contextOut": [],
