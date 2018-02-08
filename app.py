@@ -94,11 +94,12 @@ def makeWebhookResult(req):
     return {
         "speech": speech,
         "displayText": speech,
+        "messages":[
         {
             "type": 3,
             "imageUrl":"https://cdn.pixabay.com/photo/2014/04/03/11/55/robot-312566_960_720.png"
         }
-        
+        ]
         #"data": {},
         #"contextOut": [],
         ##"source": "travelsourse"
