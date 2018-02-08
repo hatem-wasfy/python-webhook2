@@ -102,6 +102,15 @@ def makeWebhookResult(req):
             {
                 "type": 0,
                 "speech": speech
+            },
+            {
+                "type": 2,
+                "title": "Is it useful to you?",
+                "replies": [
+                    "Yes",
+                    "No",
+                    "I don't know"
+                ]
             }
         ]
         #"data": {},
