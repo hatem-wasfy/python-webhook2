@@ -73,7 +73,7 @@ def makeWebhookResult(req):
             # Original filename (optional)
             ###place_photo_name = photo.filename
             # Raw image data
-            place_photo_data = photo.data
+            ###place_photo_data = photo.data
             
             
                 
