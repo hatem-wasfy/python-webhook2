@@ -63,7 +63,7 @@ def makeWebhookResult(req):
         
         #Getting place photos
 
-        for photo in place.photos:
+        ###for photo in place.photos:
             # 'maxheight' or 'maxwidth' is required
             ###place_photo = photo.get(maxheight=500, maxwidth=500)
             # MIME-type, e.g. 'image/jpeg'
