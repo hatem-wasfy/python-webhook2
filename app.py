@@ -62,17 +62,17 @@ def makeWebhookResult(req):
         
         #Getting place photos
 
-        for photo in place.photos:
+        ###for photo in place.photos:
             # 'maxheight' or 'maxwidth' is required
-            place_photo = photo.get(maxheight=500, maxwidth=500)
+            ###place_photo = photo.get(maxheight=500, maxwidth=500)
             # MIME-type, e.g. 'image/jpeg'
-            place_mime = photo.mimetype
+            ###place_mime = photo.mimetype
             # Image URL
-            place_photo_url = photo.url
+            ###place_photo_url = photo.url
             # Original filename (optional)
-            place_photo_name = photo.filename
+            ###place_photo_name = photo.filename
             # Raw image data
-            place_photo_data = photo.data
+            ###place_photo_data = photo.data
             
             robot_photo_url = "https://cdn.pixabay.com/photo/2014/04/03/11/55/robot-312566_960_720.png"
                 
