@@ -74,7 +74,7 @@ def makeWebhookResult(req):
             # Raw image data
             place_photo_data = photo.data
             
-            robot_photo = https://cdn.pixabay.com/photo/2014/04/03/11/55/robot-312566_960_720.png
+            robot_photo = "https://cdn.pixabay.com/photo/2014/04/03/11/55/robot-312566_960_720.png"
                 
         
     
