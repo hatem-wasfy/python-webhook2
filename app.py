@@ -63,7 +63,7 @@ def makeWebhookResult(req):
         
         place_photos=place.photos
         #place_photos_ref=place_photos[0].photo_reference
-        
+        print(place_photos)
         
      
         
