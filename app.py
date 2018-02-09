@@ -60,7 +60,7 @@ def makeWebhookResult(req):
         place_id = place.place_id
         place.get_details()
         #place_url=place.url
-        place_poto_ref=place.photo[0].photo_reference
+        place_poto_ref=place.photos[0].photo_reference
         
         #wasfy test
         #photo_url=place.photos[0].url
