@@ -61,13 +61,16 @@ def makeWebhookResult(req):
         place.get_details()
         place_url=place.url
         
+        #wasfy test
+        place_phoo=place.photos
+        
         #Getting place photos
 
-        for photo in place.photos:
+        #for photo in place.photos:
             # 'maxheight' or 'maxwidth' is required
             ###place_photo = photo.get(maxheight=500, maxwidth=500)
             # MIME-type, e.g. 'image/jpeg'
-            place_mime = photo.mimetype
+            #place_mime = photo.mimetype
             # Image URL
             ###place_photo_url=photo.url
             # Original filename (optional)
