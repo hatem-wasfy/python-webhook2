@@ -59,10 +59,11 @@ def makeWebhookResult(req):
         place_geo_loc = place.geo_location
         place_id = place.place_id
         place.get_details()
-        place_url=place.url
+        #place_url=place.url
+        place_poto_ref=place.photo[0].photo_reference
         
         #wasfy test
-        photo_url=place.photos[0].url
+        #photo_url=place.photos[0].url
         #place_phoo=place.photos
         
         #place_photo=place_phoo[0]
