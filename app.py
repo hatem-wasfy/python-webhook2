@@ -64,6 +64,11 @@ def makeWebhookResult(req):
         #wasfy test
         place_phoo=place.photos
         
+        place_photo=place_phoo[0]
+        
+        place_photo_url=place_photo.url
+        
+        
         #Getting place photos
 
         #for photo in place.photos:
