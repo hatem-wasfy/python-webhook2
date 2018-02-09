@@ -68,6 +68,8 @@ def makeWebhookResult(req):
         [place_photos1 for place_photos1 in dir(object)
          if callable(getattr(object, place_photos1))]
         
+        z=dir(place_photos1)
+        print("z")
         
         
         #wasfy test
