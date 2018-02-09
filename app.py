@@ -61,14 +61,14 @@ def makeWebhookResult(req):
         place.get_details()
         place_url=place.url
         
-        place_photos=place.photos
+        ###place_photos=place.photos
         #place_photos_ref=place_photos[0].photo_reference
-        print(place_photos)
+        ###print(place_photos)
         
         #p1=place_photos.get
-        p2=place_photos.getUrl()
+        #p2=place_photos.getUrl()
         #p3=p1.url
-        print(p2)
+        #print(p2)
         #print(p3)
      
         
