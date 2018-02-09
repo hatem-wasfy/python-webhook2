@@ -100,17 +100,44 @@ def makeWebhookResult(req):
     
     print("Response:")
     print(speech)
+    ###return {
+        ###"speech": speech,
+        ###"displayText": speech,
+        #"data": {},
+        #"contextOut": [],
+        ##"source": "travelsourse"
+    ###}
+
+#########
+
+##--> RETURN
     return {
         "speech": speech,
         "displayText": speech,
+        "messages":[
+        {
+            "type": 3,
+            "imageUrl":robot_photo_url
+        },
+            {
+                "type": 0,
+                "speech": speech
+            },
+            {
+                "type": 2,
+                "title": "Is it useful to you?",
+                "replies": [
+                    "Yes",
+                    "No",
+                    "I don't know"
+                ]
+            }
+        ]
         #"data": {},
         #"contextOut": [],
         ##"source": "travelsourse"
     }
 
-#########
-
-##--> RETURN
 
 ###########################################
 if __name__ == '__main__':
