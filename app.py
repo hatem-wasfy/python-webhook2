@@ -63,7 +63,7 @@ def makeWebhookResult(req):
         
         place_photos=place.photos
         #place_photos_ref=place_photos[0].photo_reference
-        place_photos1=place.photos[0]
+        place_photos1=place.photos
         
         [place_photos1 for place_photos1 in dir(object)
          if callable(getattr(object, place_photos1))]
