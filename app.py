@@ -53,6 +53,7 @@ def makeWebhookResult(req):
         radius=20000) #, types=[types.TYPE_FOOD])
     
     #xplace = query_result.html_attributions
+    place_and_url=""
     for place in query_result.places:
         #Returned places from a query are place summaries.
         ###ok###print(place.__dict__.keys())
