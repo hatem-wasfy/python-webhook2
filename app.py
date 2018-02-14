@@ -55,6 +55,7 @@ def makeWebhookResult(req):
     #xplace = query_result.html_attributions
     for place in query_result.places:
         #Returned places from a query are place summaries.
+        print(place.__dict__.keys())
         place_name = place.name
         place_geo_loc = place.geo_location
         place_id = place.place_id
@@ -64,7 +65,7 @@ def makeWebhookResult(req):
         print("******************************")
         #type(pf)
         #dir(pf)
-        print(pf.__dict__.keys())
+        ###print(pf.__dict__.keys())
         print("******************************")
         
         #print [method for method in dir(pf) if callable(getattr(pf, method))]
