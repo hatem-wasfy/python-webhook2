@@ -8,7 +8,7 @@ from flask import Flask
 from flask import request
 from flask import make_response
 
-## Hatem dealing with google places api ########################
+### Hatem dealing with google places api ########################
 from googleplaces import GooglePlaces, types, lang
 
 YOUR_API_KEY = 'AIzaSyADsZZiGIWF2laJkl5qNE5EUkSXkye4HG4'
