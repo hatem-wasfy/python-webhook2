@@ -146,7 +146,11 @@ def makeWebhookResult(req):
     
     #hatem
     #speech = "Hmm, I'll tell you about the best places in " + city + " to have " + attraction + ", how about: " + place_name + " and its address is: " place_geo_loc
-    speech = "Hmm, I'll tell you about the best places in " + city + " to have " + attraction + ".\nHow about: " + place_and_url + "? \nCheck its info here: \n" + place_url
+    
+    ###Ok###speech = "Hmm, I'll tell you about the best places in " + city + " to have " + attraction + ".\nHow about: " + place_name + "? \nCheck its info here: \n" + place_url
+    
+    speech = "Hmm, I suggest the following places in " + city + " to have " + attraction + ".\nHow about these places? \n" + place_and_url
+
 ## + " and its address is: " place_geo_loc
 
     ####
