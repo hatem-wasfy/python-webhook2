@@ -62,8 +62,7 @@ def makeWebhookResult(req):
         place_id = place.place_id
         place.get_details()
         place_url=place.url
-        plaurl=place.photos[0].url
-        print(plaurl)
+        
         #place_details=place.details
         #print(place_details.__dict__.keys())
         #pf=place.photos
@@ -83,12 +82,13 @@ def makeWebhookResult(req):
         #purl=pf[0].getUrl
         #print(purl)
         
-        #for photo in place.photos:
+        for photo in place.photos:
         #place_photos=place.photos
         #place_photos_ref=place_photos[0].photo_reference
             #place.photos[0].getUrl
             #purl=photo.getUrl
-            #print(purl)
+            purl=photo.url
+            print(purl)
             #pname=photo.filename
             #print(pname)
         
