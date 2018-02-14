@@ -55,18 +55,20 @@ def makeWebhookResult(req):
     #xplace = query_result.html_attributions
     for place in query_result.places:
         #Returned places from a query are place summaries.
-        print(place.__dict__.keys())
+        ###ok###print(place.__dict__.keys())
         place_name = place.name
         place_geo_loc = place.geo_location
         place_id = place.place_id
-        place.get_details()
+        #place.get_details()
         place_url=place.url
-        pf=place.photos
+        place_details=place.details
+        print(place_details.__dict__.keys())
+        #pf=place.photos
         print("******************************")
         #type(pf)
         #dir(pf)
         ###print(pf.__dict__.keys())
-        print("******************************")
+        #print("******************************")
         
         #print [method for method in dir(pf) if callable(getattr(pf, method))]
         
