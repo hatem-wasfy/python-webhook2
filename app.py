@@ -56,12 +56,14 @@ def makeWebhookResult(req):
     for place in query_result.places:
         #Returned places from a query are place summaries.
         ###ok###print(place.__dict__.keys())
-        print(place.__dict__)
+        ###print(place.__dict__)
         place_name = place.name
         place_geo_loc = place.geo_location
         place_id = place.place_id
         place.get_details()
         place_url=place.url
+        plaurl=place.photos[0].url
+        print(plaurl)
         #place_details=place.details
         #print(place_details.__dict__.keys())
         #pf=place.photos
