@@ -59,7 +59,7 @@ def makeWebhookResult(req):
         place_name = place.name
         place_geo_loc = place.geo_location
         place_id = place.place_id
-        #place.get_details()
+        place.get_details()
         place_url=place.url
         place_details=place.details
         print(place_details.__dict__.keys())
