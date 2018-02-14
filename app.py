@@ -62,11 +62,14 @@ def makeWebhookResult(req):
         place_url=place.url
         
         #photos
-        for photo in place.photos:
+        purl=place.photos[0].getUrl
+        print(purl)
+        
+        #for photo in place.photos:
         #place_photos=place.photos
         #place_photos_ref=place_photos[0].photo_reference
             #place.photos[0].getUrl
-            purl=photo.getUrl
+            #purl=photo.getUrl
             #print(purl)
             #pname=photo.filename
             #print(pname)
