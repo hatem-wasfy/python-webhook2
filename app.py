@@ -64,7 +64,7 @@ def makeWebhookResult(req):
         place.get_details()
         place_url=place.url
         ###global place_and_url
-        place_and_url +="\n" + place_name + "\n"
+        place_and_url +="\n" + place_name + "\n" + "check it here:\n" + place_url
         #place_details=place.details
         #print(place_details.__dict__.keys())
         #pf=place.photos
