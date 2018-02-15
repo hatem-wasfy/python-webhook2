@@ -12,12 +12,14 @@ from flask import make_response
 import psycopg2
 #import os
 #import urlparse
-from urllib.parse import urlparse
+#from urllib.parse import urlparse
+import urllib.parse
 ######Database########
 
-urlparse.uses_netloc.append("postgres")
-url = urlparse.urlparse(os.environ["postgres://vxjbtravsqldpn:8e28f8853a5ad91bb6ec8614359773e844b6afbe8e57324bfa90d89c050a3ef8@ec2-54-221-234-62.compute-1.amazonaws.com:5432/dn7coi02b1hab"])
-                                  
+#urlparse.uses_netloc.append("postgres")
+#url = urlparse.urlparse(os.environ["postgres://vxjbtravsqldpn:8e28f8853a5ad91bb6ec8614359773e844b6afbe8e57324bfa90d89c050a3ef8@ec2-54-221-234-62.compute-1.amazonaws.com:5432/dn7coi02b1hab"])
+urllib.parse.uses_netloc.append("postgres")
+url = urllib.parse.urlparse(os.environ["postgres://vxjbtravsqldpn:8e28f8853a5ad91bb6ec8614359773e844b6afbe8e57324bfa90d89c050a3ef8@ec2-54-221-234-62.compute-1.amazonaws.com:5432/dn7coi02b1hab"])                                  
     
 conn = psycopg2.connect(
 database=url.path[1:],
