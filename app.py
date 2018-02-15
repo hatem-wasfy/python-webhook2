@@ -24,13 +24,13 @@ import urllib.parse
 ###urllib.parse.uses_netloc.append("postgres")
 ###url = urllib.parse.urlparse(os.environ["postgres://vxjbtravsqldpn:8e28f8853a5ad91bb6ec8614359773e844b6afbe8e57324bfa90d89c050a3ef8@ec2-54-221-234-62.compute-1.amazonaws.com:5432/dn7coi02b1hab"])                                  
     
-conn = psycopg2.connect(
-database=url.path[1:],
-user=url.username,
-password=url.password,
-host=url.hostname,
-port=url.port
-)                                   
+###conn = psycopg2.connect(
+###database=url.path[1:],
+###user=url.username,
+###password=url.password,
+###host=url.hostname,
+###port=url.port
+###)                                   
 
 ##################################
 
