@@ -16,10 +16,13 @@ import psycopg2
 import urllib.parse
 ######Database########
 
+#Python2
 #urlparse.uses_netloc.append("postgres")
 #url = urlparse.urlparse(os.environ["postgres://vxjbtravsqldpn:8e28f8853a5ad91bb6ec8614359773e844b6afbe8e57324bfa90d89c050a3ef8@ec2-54-221-234-62.compute-1.amazonaws.com:5432/dn7coi02b1hab"])
-urllib.parse.uses_netloc.append("postgres")
-url = urllib.parse.urlparse(os.environ["postgres://vxjbtravsqldpn:8e28f8853a5ad91bb6ec8614359773e844b6afbe8e57324bfa90d89c050a3ef8@ec2-54-221-234-62.compute-1.amazonaws.com:5432/dn7coi02b1hab"])                                  
+
+#Python3
+###urllib.parse.uses_netloc.append("postgres")
+###url = urllib.parse.urlparse(os.environ["postgres://vxjbtravsqldpn:8e28f8853a5ad91bb6ec8614359773e844b6afbe8e57324bfa90d89c050a3ef8@ec2-54-221-234-62.compute-1.amazonaws.com:5432/dn7coi02b1hab"])                                  
     
 conn = psycopg2.connect(
 database=url.path[1:],
