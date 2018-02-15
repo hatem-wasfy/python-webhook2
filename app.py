@@ -8,6 +8,28 @@ from flask import Flask
 from flask import request
 from flask import make_response
 
+#############################
+import psycopg2
+#import os
+import urlparse
+
+######Database########
+
+urlparse.uses_netloc.append("postgres")
+url = urlparse.urlparse(os.environ["postgres://vxjbtravsqldpn:8e28f8853a5ad91bb6ec8614359773e844b6afbe8e57324bfa90d89c050a3ef8@ec2-54-221-234-62.compute-1.amazonaws.com:5432/dn7coi02b1hab
+"])
+                                   
+    
+conn = psycopg2.connect(
+database=url.path[1:],
+user=url.username,
+password=url.password,
+host=url.hostname,
+port=url.port
+)                                   
+
+##################################
+
 ### Hatem dealing with google places api ########################
 from googleplaces import GooglePlaces, types, lang
 
@@ -65,7 +87,7 @@ def makeWebhookResult(req):
         place_url=place.url
         ###global place_and_url
         
-        ###place_and_url +="\n" + place_name + "\n" + "check it here:\n" + place_url + "\n"
+        place_and_url +="\n" + place_name + "\n" + "check it here:\n" + place_url + "\n"
         
         #place_details=place.details
         #print(place_details.__dict__.keys())
@@ -77,8 +99,8 @@ def makeWebhookResult(req):
             ###print(place_and_url, file=f)
         
         ###Read from file
-        with open('somefile.txt', 'rt') as f:
-            place_and_url = f.read()
+        ###with open('somefile.txt', 'rt') as f:
+            ###place_and_url = f.read()
             
         #type(pf)
         #dir(pf)
