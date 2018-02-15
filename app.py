@@ -69,7 +69,7 @@ def makeWebhookResult(req):
         #print(place_details.__dict__.keys())
         #pf=place.photos
         print("******************************")
-        with open('somefile.txt', 'rt') as f:
+        with open('somefile.txt', 'wt') as f:
             print(place_and_url, file=f)
             
         #type(pf)
