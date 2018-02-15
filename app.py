@@ -64,13 +64,21 @@ def makeWebhookResult(req):
         place.get_details()
         place_url=place.url
         ###global place_and_url
-        place_and_url +="\n" + place_name + "\n" + "check it here:\n" + place_url + "\n"
+        
+        ###place_and_url +="\n" + place_name + "\n" + "check it here:\n" + place_url + "\n"
+        
         #place_details=place.details
         #print(place_details.__dict__.keys())
         #pf=place.photos
         print("******************************")
-        with open('somefile.txt', 'wt') as f:
-            print(place_and_url, file=f)
+        
+        ###Write to file
+        ###with open('somefile.txt', 'wt') as f:
+            ###print(place_and_url, file=f)
+        
+        ###Read from file
+        with open('somefile.txt', 'rt') as f:
+            place_and_url = f.read()
             
         #type(pf)
         #dir(pf)
