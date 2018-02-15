@@ -11,8 +11,8 @@ from flask import make_response
 #############################
 import psycopg2
 #import os
-import urlparse
-
+#import urlparse
+from urllib.parse import urlparse
 ######Database########
 
 urlparse.uses_netloc.append("postgres")
